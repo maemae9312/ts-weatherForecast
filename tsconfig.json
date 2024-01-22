@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* 基本オプション */
+    "moduleResolution": "node",
+    "target": "es5",                          // ECMAScriptのターゲットバージョン
+    "module": "ESNext",                     // モジュールシステム
+    "lib": ["dom", "es6", "es2017", "esnext"],// ライブラリファイル
+    "outDir": "./dist",                       // 出力ディレクトリの指定
+    "rootDir": "./src",                       // コンパイル対象のルートディレクトリの指定
+    "strict": true,                           // 厳格な型チェックオプションの有効化
+    "esModuleInterop": true,                  // CommonJSモジュールとの互換性を保証
+    "skipLibCheck": true,                     // 宣言ファイルの型チェックをスキップ
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字の一貫性チェック
+
+    /* 追加のチェック */
+    "noImplicitAny": true,                    // any型の暗黙の使用を許可しない
+    "strictNullChecks": true,                 // nullの厳格なチェックを有効化
+    "strictFunctionTypes": true,              // 関数の厳格な型チェックを有効化
+    "strictBindCallApply": true,              // 厳格なbind/call/applyチェックを有効化
+    "strictPropertyInitialization": true,     // クラスのプロパティの厳格な初期化チェック
+    "noImplicitThis": true,                   // thisの暗黙的なany型を許可しない
+    "alwaysStrict": true,                     // 厳格モードでの解析と全ファイルの"use strict"の挿入
+
+    /* デバッグとパフォーマンス */
+    "sourceMap": true,                        // ソースマップの生成を有効化
+  },
+  "include": [
+    "src/**/*" // コンパイルするファイルを指定
+  ],
+  "exclude": [
+    "node_modules", // コンパイルから除外するファイルを指定
+    "**/*.spec.ts"
+  ]
+}
